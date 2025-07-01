@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for Institute</title>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <p><strong>Fill the Details</strong></p>
+    <form action="/submit" method="post">
+        <label for="firstname">First Name*</label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <label for="lastname">Last Name*</label><br>
+        <input type="text" id="firstname" name="firstname"  style="width:225px;"   placeholder="Enter Your First Name"> &nbsp;&nbsp;&nbsp;&nbsp;                                                                                   <input type="text" id="lastname"  name="lastname"  style="width:300px;"  placeholder="Enter Your Last Name"> <br><br>      
+        
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" style="width: 555px;" placeholder="Enter Your Email"><br><br>
+
+        <label for="password">Password*</label>  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         <label for="confirmpassword">Confirm Password*</label><br>                                                          
+        <input type="password" id="password" name="password"  style="width:225px;" placeholder="Enter Your password">  &nbsp;&nbsp;                                                                                                     <input type="password" id="confirmpassword" name="confirmpassword"  style="width:305px;" placeholder="Confirm Your Password "><br><br>                                                                                                                                                                                                                    
+        
+        <p>Gender:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hobbies:</p>                                          
+        <input type="radio" id="male" name="gender">                     
+        <label for="male">Male</label>
+        
+       <input type="radio" id="female" name="gender">
+       <label for="female">Female</label>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <input type="checkbox" id="music" name="music">
+                                                                                                                                                                                                    <label for="music">Music</label>                                      
+
+       <input type="checkbox" id="sports" name="sports">
+       <label for="sports">Sports</label>
+
+       <input type="checkbox" id="travel" name="travel">
+       <label for="travel">Travel</label>
+
+       <input type="checkbox" id="Movies" name="Movies">
+       <label for="movies">Movies</label><br><br>
+
+       <label for="sourceofincome">Source Of Income</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="income">Income</label><br>
+       <select type="dropdown" id="sourceofincome" name="sourceofincome" style="width:225px;">
+          
+          <option value=""></option>
+          <option value="employed">employed</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="selfemployed">Self Employed</option>
+          <option value="Bussiness">Bussiness</option>
+       </select>
+
+       <input type="range" id="income" name="income" style="width:300px;" min="5000" max="40000">
+        <span id="income">40k</span><br><br>
+
+        <label for="uploadfile">Upload Profile Picture</label> &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;   <label for="age">Age</label><br>
+        <input type="file" id="uploadfile" name="uploadfile" style="width:235px;">                                               <input id="number" id="age" name="age" style="width:315px;"  placeholder="Enter Your Age"><br><br>
+        <p>Bio</p>
+        <textarea id="bio" name="bio" rows="10" cols="74"></textarea><br><br>
+
+        <button type="submit" style="margin-left:500px;">Create </button>
+        
+    </form>
+</body>
+</html>
