@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-Bounce-Fade</title>
+    <style>
+    body {
+      background-color:yellowgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .five {
+      font-size: 50px;
+      color: black;
+      opacity: 0;
+      transform: translateX(-100px);
+      animation: fadeSlideBounce 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeSlideBounce {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+      80% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="five">Gummidipoondi </div>
+    
+</body>
+</html>
